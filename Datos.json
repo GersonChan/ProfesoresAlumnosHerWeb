@@ -1,0 +1,20 @@
+[
+  {
+    "numeroCarnet": 1,    
+    "numeroNotas": [ 75, 35, 80, 50 ],
+    "nombre": "nombre 1",
+    "apellido": "apellido"
+  },
+  {
+    "numeroCarnet": 2,
+    "numeroNotas": [ 75, 35, 80, 50 ],
+    "nombre": "nombre 2",
+    "apellido": "apellido 2"
+  },
+  {
+    "numeroCarnet": 3,
+    "numeroNotas": [ 50, 24, 27 ],
+    "nombre": "nombre 3",
+    "apellido": "apellido 3"
+  }
+]
