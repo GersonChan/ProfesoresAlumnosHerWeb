@@ -15,13 +15,22 @@ namespace ProfesoresAlumnosHerWeb
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
+        /// <summary>
+        /// DropDownList2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
 
         /// <summary>
         /// Label1 control.
@@ -33,13 +42,13 @@ namespace ProfesoresAlumnosHerWeb
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// TextBox2 control.
+        /// txtNombre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
         /// Label2 control.
@@ -51,13 +60,13 @@ namespace ProfesoresAlumnosHerWeb
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// TextBox3 control.
+        /// txtApellido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtApellido;
 
         /// <summary>
         /// Label3 control.
@@ -69,13 +78,22 @@ namespace ProfesoresAlumnosHerWeb
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// TextBox4 control.
+        /// txtCarnet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtCarnet;
+
+        /// <summary>
+        /// txtCurso control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCurso;
 
         /// <summary>
         /// Label4 control.
@@ -87,13 +105,22 @@ namespace ProfesoresAlumnosHerWeb
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Button1 control.
+        /// txtNota control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox txtNota;
+
+        /// <summary>
+        /// btnIngresarNota control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnIngresarNota;
 
         /// <summary>
         /// GridView1 control.
@@ -105,30 +132,21 @@ namespace ProfesoresAlumnosHerWeb
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Button2 control.
+        /// btnIngresarAlumno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnIngresarAlumno;
 
         /// <summary>
-        /// Button3 control.
+        /// btnGuardarUniversidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
-
-        /// <summary>
-        /// GridView2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.Button btnGuardarUniversidad;
     }
 }

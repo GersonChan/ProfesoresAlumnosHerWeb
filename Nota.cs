@@ -5,9 +5,9 @@ using System.Web;
 
 namespace ProfesoresAlumnosHerWeb
 {
-    public class Alumno : Persona
+    public class Nota
     {
-        public int numeroCarnet { get; set; }
-        public List<Nota> notas { get; set; }
+        public string curso { get; set; }
+        public int punteo { get; set; }
     }
 }

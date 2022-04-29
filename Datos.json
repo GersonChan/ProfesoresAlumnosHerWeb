@@ -1,20 +1,77 @@
 [
   {
-    "numeroCarnet": 1,    
-    "numeroNotas": [ 75, 35, 80, 50 ],
-    "nombre": "nombre 1",
-    "apellido": "apellido"
+    "nombre": "Mesoamericana",
+    "sede": "Quetzaltenango",
+    "alumnos": [
+      {
+        "numeroCarnet": 12,
+        "notas": [
+          {
+            "curso": "c1",
+            "punteo": 70
+          },
+          {
+            "curso": "c2",
+            "punteo": 85
+          }
+        ],
+        "nombre": "nombre 1",
+        "apellido": "apellido 1"
+      }
+    ]
   },
   {
-    "numeroCarnet": 2,
-    "numeroNotas": [ 75, 35, 80, 50 ],
-    "nombre": "nombre 2",
-    "apellido": "apellido 2"
+    "nombre": "Landivar",
+    "sede": "Guatemala",
+    "alumnos": [
+      {
+        "numeroCarnet": 1,
+        "notas": [
+          {
+            "curso": "c1",
+            "punteo": 85
+          },
+          {
+            "curso": "c2",
+            "punteo": 74
+          },
+          {
+            "curso": "c3",
+            "punteo": 70
+          }
+        ],
+        "nombre": "nombre 2",
+        "apellido": "apellido 2"
+      }
+    ]
   },
   {
-    "numeroCarnet": 3,
-    "numeroNotas": [ 50, 24, 27 ],
-    "nombre": "nombre 3",
-    "apellido": "apellido 3"
+    "nombre": "San Carlos",
+    "sede": "Quetzaltenango",
+    "alumnos": [
+      {
+        "numeroCarnet": 2,
+        "notas": [
+          {
+            "curso": "c1",
+            "punteo": 85
+          },
+          {
+            "curso": "c2",
+            "punteo": 70
+          },
+          {
+            "curso": "c3",
+            "punteo": 65
+          },
+          {
+            "curso": "c4",
+            "punteo": 74
+          }
+        ],
+        "nombre": "nombre 3",
+        "apellido": "apllido 3"
+      }
+    ]
   }
 ]

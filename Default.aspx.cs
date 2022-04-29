@@ -11,14 +11,15 @@ namespace ProfesoresAlumnosHerWeb
 {
     public partial class _Default : Page
     {
-        static List<Alumno> alumnos = new List<Alumno>();
-        static List<int> notasTemp = new List<int>();
+        static List<Alumno> alumnostem = new List<Alumno>();
+        static List<Nota> notasTemp = new List<Nota>();
+        static List<Universidad> universidades = new List<Universidad>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                leer();
+                
             }
         }
 
@@ -30,56 +31,51 @@ namespace ProfesoresAlumnosHerWeb
         private void guardar()
         {
             string archivo = Server.MapPath("~/Datos.json");
-            string json = JsonConvert.SerializeObject(alumnos);
+            string json = JsonConvert.SerializeObject(universidades);
             System.IO.File.WriteAllText(archivo, json);
-        }
-
-        private void leer()
-        {
-            string archivo = Server.MapPath("~/Datos.json");
-            StreamReader jsonStream = File.OpenText(archivo);
-            string json = jsonStream.ReadToEnd();
-            jsonStream.Close();
-            alumnos = JsonConvert.DeserializeObject<List<Alumno>>(json);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             Alumno alumnoTemp = new Alumno();
-            alumnoTemp.nombre = TextBox1.Text;
-            alumnoTemp.apellido = TextBox2.Text;
-            alumnoTemp.numeroCarnet = Convert.ToInt16(TextBox3.Text);
-            alumnoTemp.numeroNotas = notasTemp;
+            alumnoTemp.nombre = txtNombre.Text;
+            alumnoTemp.apellido = txtApellido.Text;
+            alumnoTemp.numeroCarnet = Convert.ToInt16(txtCarnet.Text);
+            alumnoTemp.notas = notasTemp.ToArray().ToList();
 
-            alumnos.Add(alumnoTemp);
-
-            guardar();
+            alumnostem.Add(alumnoTemp);
 
             notasTemp.Clear();
 
-            TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtCarnet.Text = "";
+            txtNota.Text = "";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int nota = Convert.ToInt16(TextBox4.Text);
-            notasTemp.Add(nota);
+            Nota notas = new Nota();
+            notas.curso = txtCurso.Text;
+            notas.punteo = Convert.ToInt16(txtNota.Text);
+            notasTemp.Add(notas);
 
             GridView1.DataSource = notasTemp;
             GridView1.DataBind();
 
-            TextBox4.Text = "";
+            txtNota.Text = "";
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Button4_Click(object sender, EventArgs e)
         {
-            leer();
-            GridView2.DataSource = alumnos;
-            GridView2.DataBind();
+            Universidad universidadTemp = new Universidad();
+            universidadTemp.nombre = DropDownList1.SelectedValue;
+            universidadTemp.sede = DropDownList2.SelectedValue;
+            universidadTemp.alumnos = alumnostem.ToArray().ToList();
+
+            universidades.Add(universidadTemp);
+            guardar();
+            alumnostem.Clear();
         }
     }
 }
