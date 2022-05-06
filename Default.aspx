@@ -7,8 +7,7 @@
 
     <div class="row">
         
-        &nbsp;Universidad:<br />
-        <br />
+        <h1>&nbsp;Universidad:</h1>
         Universidad&nbsp;
         <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="131px">
             <asp:ListItem>Mesoamericana</asp:ListItem>
@@ -24,10 +23,7 @@
             <asp:ListItem>Guatemala</asp:ListItem>
             <asp:ListItem></asp:ListItem>
         </asp:DropDownList>
-        <br />
-        <br />
-        Alumno:<br />
-        <br />
+        <h1>Alumno:</h1>
         <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
         &nbsp;<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
         <br />
@@ -38,10 +34,7 @@
         <br />
         <asp:Label ID="Label3" runat="server" Text="Carnet"></asp:Label>
         &nbsp;<asp:TextBox ID="txtCarnet" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Notas:<br />
-        <br />
+        <h1>Notas:</h1>
         &nbsp;Curso
         <asp:TextBox ID="txtCurso" runat="server"></asp:TextBox>
         <br />

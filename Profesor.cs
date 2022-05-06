@@ -8,5 +8,6 @@ namespace ProfesoresAlumnosHerWeb
     public class Profesor : Persona
     {
         public string titulo { get; set; }
+
     }
 }

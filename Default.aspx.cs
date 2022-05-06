@@ -19,7 +19,7 @@ namespace ProfesoresAlumnosHerWeb
         {
             if (!IsPostBack)
             {
-                
+                //leer();
             }
         }
 
@@ -30,10 +30,20 @@ namespace ProfesoresAlumnosHerWeb
 
         private void guardar()
         {
-            string archivo = Server.MapPath("~/Datos.json");
+            string archivo = Server.MapPath("~/universidades.json");
             string json = JsonConvert.SerializeObject(universidades);
             System.IO.File.WriteAllText(archivo, json);
         }
+
+        private void leer()
+        {
+            string archivo = Server.MapPath("~/universidades.json");
+            StreamReader jsonStream = File.OpenText(archivo);
+            string json = jsonStream.ReadToEnd();
+            jsonStream.Close();
+            universidades = JsonConvert.DeserializeObject<List<Universidad>>(json);
+        }
+
 
         protected void Button2_Click(object sender, EventArgs e)
         {

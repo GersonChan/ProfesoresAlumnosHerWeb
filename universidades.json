@@ -29,7 +29,7 @@
         "notas": [
           {
             "curso": "c1",
-            "punteo": 85
+            "punteo": 70
           },
           {
             "curso": "c2",
@@ -37,7 +37,7 @@
           },
           {
             "curso": "c3",
-            "punteo": 70
+            "punteo": 85
           }
         ],
         "nombre": "nombre 2",
@@ -54,15 +54,15 @@
         "notas": [
           {
             "curso": "c1",
-            "punteo": 85
-          },
-          {
-            "curso": "c2",
             "punteo": 70
           },
           {
-            "curso": "c3",
+            "curso": "c2",
             "punteo": 65
+          },
+          {
+            "curso": "c3",
+            "punteo": 85
           },
           {
             "curso": "c4",
@@ -70,7 +70,7 @@
           }
         ],
         "nombre": "nombre 3",
-        "apellido": "apllido 3"
+        "apellido": "apllido 3e"
       }
     ]
   }
